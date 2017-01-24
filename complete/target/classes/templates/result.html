@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1 style="margin-left:50px">Курс валют</h1>
+<div style="margin-left:50px">
+    <p th:text="'Валюта: ' + ${money.id}" />
+    <p th:text="'Курс: ' + ${money.content} + 'руб.'" />
+    <a href="/greeting">Найти курс другой валюты</a>
+</div>
+</body>
+</html>
